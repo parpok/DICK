@@ -13,6 +13,7 @@
 		8B3607512B3F6CEE001F95F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3607502B3F6CEE001F95F6 /* Preview Assets.xcassets */; };
 		8B3607582B3F6D6F001F95F6 /* SCHLONG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3607572B3F6D6F001F95F6 /* SCHLONG.swift */; };
 		8BA0E7792B40985D0057AB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8BA0E7782B40985D0057AB69 /* Localizable.xcstrings */; };
+		8BA8D92B2B4DB40E00B87DD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BA8D92D2B4DB40E00B87DD4 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		8B3607572B3F6D6F001F95F6 /* SCHLONG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCHLONG.swift; sourceTree = "<group>"; };
 		8BA0E7772B4097CE0057AB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8BA0E7782B40985D0057AB69 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		8BA8D92C2B4DB40E00B87DD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BA8D92F2B4DB45400B87DD4 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 				8B36074C2B3F6CEE001F95F6 /* Assets.xcassets */,
 				8B36074E2B3F6CEE001F95F6 /* Dick.entitlements */,
 				8B36074F2B3F6CEE001F95F6 /* Preview Content */,
+				8BA8D92D2B4DB40E00B87DD4 /* InfoPlist.strings */,
 			);
 			path = Dick;
 			sourceTree = "<group>";
@@ -105,7 +109,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					8B3607442B3F6CED001F95F6 = {
 						CreatedOnToolsVersion = 15.1;
@@ -118,8 +122,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				pl,
+				Base,
 			);
 			mainGroup = 8B36073C2B3F6CED001F95F6;
 			productRefGroup = 8B3607462B3F6CED001F95F6 /* Products */;
@@ -137,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3607512B3F6CEE001F95F6 /* Preview Assets.xcassets in Resources */,
+				8BA8D92B2B4DB40E00B87DD4 /* InfoPlist.strings in Resources */,
 				8B36074D2B3F6CEE001F95F6 /* Assets.xcassets in Resources */,
 				8BA0E7792B40985D0057AB69 /* Localizable.xcstrings in Resources */,
 			);
@@ -157,12 +162,25 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		8BA8D92D2B4DB40E00B87DD4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BA8D92C2B4DB40E00B87DD4 /* en */,
+				8BA8D92F2B4DB45400B87DD4 /* pl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		8B3607522B3F6CEE001F95F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -192,6 +210,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -224,6 +243,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -253,6 +273,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -281,6 +302,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Dick/Preview Content\"";
 				DEVELOPMENT_TEAM = 5M784D869U;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -324,6 +346,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Dick/Preview Content\"";
 				DEVELOPMENT_TEAM = 5M784D869U;
 				ENABLE_HARDENED_RUNTIME = YES;
